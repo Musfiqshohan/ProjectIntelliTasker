@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkFreeSlots"
+        android:backgroundTint="#5aaeae"
+        android:text="check free slots" />
+
+    <EditText
+        android:id="@+id/setMeetDate"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:hint="Choose Date to meet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/setDuration"
+
+        android:inputType="number"
+        android:hint="Choose duration in minute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ListView
+        android:background="@color/mild_ash"
+        android:id="@+id/taskList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

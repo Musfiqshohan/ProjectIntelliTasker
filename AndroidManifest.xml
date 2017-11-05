@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.intellitasker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    //Shohan
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <receiver android:name="com.sample.alarmRing">
+        <intent-filter>
+            <action android:name="com.sample.myaction" />
+        </intent-filter>
+    </receiver>
+
+
+    //shohan Myapp
+    <application
+
+        android:name=".Todo_List_Package.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.EnterInfo"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.ShowNotification"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.ShowProfile"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="info.androidhive.intellitasker.activities.SuggestTime"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.SignUp"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.HomePage"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.PageZero"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.SignIn"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="info.androidhive.intellitasker.activities.MeetFriend"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+        </activity>
+
+        <activity
+            android:name=".Group_Task_Package.allGrouptaskView"
+            android:label="grouptask">
+
+        </activity>
+        <activity
+            android:name=".Group_Task_Package.allGroupTask"
+            android:label="allgrouptask">
+
+        </activity>
+        <activity
+            android:name=".Group_Task_Package.AllMembersView"
+            android:label="Members"></activity>
+        <activity
+            android:name=".Group_Task_Package.createNewMember"
+            android:label="createnewmember"></activity>
+        <activity
+            android:name=".Group_Task_Package.allTasknameView"
+            android:label="alltask"></activity>
+        <activity
+            android:name=".Group_Task_Package.datePicker"
+            android:label="datepicker"></activity>
+        <activity
+            android:name=".Group_Task_Package.createNewGroup"
+            android:label="createnewgroup"></activity>
+        <activity
+            android:name=".Group_Task_Package.myTaskView"
+            android:label="mytask"></activity>
+        <activity
+            android:name=".Group_Task_Package.timepicker"
+            android:label="timepicker">
+
+        </activity>
+        <activity
+            android:name=".Group_Task_Package.addMember"
+            android:label="addmember">
+
+        </activity>
+        <activity
+            android:name=".Group_Task_Package.assignTask"
+            android:label="assignatask">
+
+        </activity>
+        <activity
+            android:name=".Group_Task_Package.createNewMemberFriend"
+            android:label="createnewnember">
+
+        </activity>
+
+
+        //shohan
+        <activity
+            android:name=".Todo_List_Package.MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Todo_List_Package.EditFieldClass" />
+        <activity android:name=".Todo_List_Package.EditTaskMessageClass"></activity>
+        <activity android:name=".Todo_List_Package.GraphDrawActivity"></activity>
+
+        <receiver android:name=".Todo_List_Package.alarmRing" />
+
+        <activity android:name=".NewsFeedPackage.WritePostClass" />
+        <activity android:name=".NewsFeedPackage.FindingFeedClass" />
+        <activity android:name=".NewsFeedPackage.TaskFeedClass" />
+        <activity android:name=".NewsFeedPackage.ShareResourceActivity" />
+        //shohan
+
+    </application>
+
+</manifest>

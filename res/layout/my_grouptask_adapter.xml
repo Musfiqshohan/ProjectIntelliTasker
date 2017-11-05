@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#818ec7"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    android:foreground="?selectableItemBackground"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fid"
+            android:textColor="#91c781"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_title"
+            android:textColor="#91c781"
+            android:layout_alignParentTop="true"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_detail"
+            android:layout_below="@+id/item_title"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="done"
+            android:id="@+id/donebuton"
+            android:textColor="#c7818d"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/donebuton"
+            android:text="add"
+            android:id="@+id/addbuton"
+            android:textColor="#c7818d"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

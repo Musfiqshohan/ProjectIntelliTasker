@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/TaskInfoField"
+        android:hint="Write your task"
+        android:textSize="30sp"
+        android:gravity="top"
+
+
+        ></EditText>
+
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fabsave"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="SaveButtonClicked"
+            android:src="@drawable/tick4"
+
+            ></android.support.design.widget.FloatingActionButton>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/CatField"
+        android:hint="Catagory"
+        android:textSize="25sp"
+        ></EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/DurField"
+        android:hint="Duration(hours):"
+        android:textSize="22sp"
+        ></EditText>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="Due Date"
+        android:id="@+id/b_pick"
+        android:textSize="15sp"
+        android:onClick="DateButtonClicked"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="Add a reminder 1"
+        android:id="@+id/b_reminder1"
+        android:textSize="15sp"
+        android:onClick="Reminder1ButtonClicked"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="Add a reminder 2"
+        android:id="@+id/b_reminder2"
+        android:textSize="15sp"
+        android:onClick="Reminder2ButtonClicked"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:text="Add a reminder 3"
+        android:id="@+id/b_reminder3"
+        android:textSize="15sp"
+        android:onClick="Reminder3ButtonClicked"
+        />
+
+
+
+
+
+</LinearLayout>
